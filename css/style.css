@@ -83,14 +83,14 @@ nav{
 }
 
 #navbar-sub{
-  background-color: cyan;
+  /*background-color: cyan;*/
   width: 100%;
   padding-left: 28%;
   height: 100%;
 }
 
 #navbar-sub ul li{
-  background-color: orange;
+  /*background-color: orange;*/
   height: 100%;
   line-height: 26px;
   padding: 0;
@@ -524,12 +524,8 @@ footer{
 
 /*Responsive-Screen*/
 @media(max-width: 992px){
-  body{
-  background-color: green;
-  }
-
   #con-navbar-sub{
-    background-color: darkblue;
+    /*background-color: darkblue;*/
     height: 40px;
     margin-top: -10px;
     line-height: 30px;
@@ -538,14 +534,14 @@ footer{
 
     /*Sub Menu*/
   #navbar-sub{
-    background-color: cyan;
+    /*background-color: cyan;*/
     width: 100%;
     padding-left: 0;
     height: 100%;
   }
 
   #navbar-sub ul li{
-    background-color: orange;
+    /*background-color: orange;*/
     height: 100%;
     line-height: 25px;
     width: 100%;
