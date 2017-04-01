@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    <title>Material Design Bootstrap</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="../../css/mdb.min.css" rel="stylesheet">
+
+    <link href="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css" rel="stylesheet">
+
+    <!-- Your custom styles (optional) -->
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <!-- wrapper filters -->
+    <link href="../../css/type.css" rel="stylesheet">
+
+    <!-- filters slider -->
+    <link href="../../css/filters-slider.css" rel="stylesheet">
+
+</head>
+
+<!--Double navigation-->
+<header class="navbar" style="background-color: #0e7bbf; padding: 0; margin: 0;">
+    <nav class="navbar navbar-toggleable-md navbar-white scrolling-navbar navbar-light double-nav">
+    <div class="container" id="containerNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="logo" id="navbarLogo" href="#">
+            <img src="../../img/icons/logo.png" alt="logo"/>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarHeader">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link waves-effect"><strong><b style="color: #0e7bbf;">HOME</b></strong><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a href="../partnership.html" class="nav-link waves-effect"><strong><b style="color: #0e7bbf;">PARTNER SHIP</b></strong></a>
+                </li>
+                <li class="nav-item" id="triangle-co">
+                    <a href="all_products.html" class="nav-link blue-text waves-effect"><strong><b style="color: #0e7bbf;">PRODUCTS</b></strong></a><div class="hidden-md-down" id="triangle-products"></div>
+                </li>
+                 <li class="nav-item">
+                    <a href="../about/history.html" class="nav-link blue-text waves-effect"><strong><b style="color: #0e7bbf;">ABOUT</b></strong></a>
+                </li>
+                 <li class="nav-item">
+                    <a href="../event.html" class="nav-link blue-text waves-effect"><strong><b style="color: #0e7bbf;">EVENT</b></strong></a>
+                </li>
+                 <li class="nav-item">
+                    <a href="pages/contact/contact_us.html" class="nav-link blue-text waves-effect"><strong><b style="color: #0e7bbf;">CONTACT</b></strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>           
+    </nav>
+    <div class="white-text d-flex flex row align-items-center hidden-md-down" style="background-color: #0e7bbf; height: 80px; padding-left: 35px; border: 3px solid #0e7bbf !important; line-height: 10px; width: 100%;">
+            <div class="col col-lg-3" style="font-size: 14px;"><h4 class="h4-responsive"><strong><b>THEY USE OUR PRODUCTS</b></strong></h4></div>
+            <div class="col col-lg-9" style="font-size: 14px;"><h6 class="h6-responsive hidden-xs-down">WATERAX offers a complete line of high performance portable centrifugal pumps and hand pumps.</h6></div>
+    </div>
+</header>
+<!--/.Double navigation-->
+
+<body class="white-skin">
+
+<!-- <subHeader class=""> -->
+<div class="navbar" style="background-color:#ccc; top: -8px; padding: 0;">
+    <nav class="navbar navbar-toggleable-md scrolling-navbar navbar-light" style="height: 40px; line-height: 33px; background-color:#eee;">
+    <div class="container" id="con-navbar-sub">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-sub" aria-controls="navbar-sub" aria-expanded="false" aria-label="Toggle navigation" style="line-height: 0px;">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#" id="menu-toggle">
+            <strong class="blue-text"><b>Filters</b></strong>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbar-sub">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active" id="mini-triangle">
+                    <a href="all_products.html" class="nav-link waves-effect"><strong><b>ALL PRODUCTS</b></strong></a><i id="absolute-allpro" class="hidden-md-down"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="fire_pump.html" class="nav-link waves-effect"><strong><b>FIRE PUMP</b></strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="hose.html" class="nav-link waves-effect"><strong><b>HOSE</b></strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="accessories.html" class="nav-link waves-effect"><strong><b>ACCESSORIES</b></strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="document.html" class="nav-link waves-effect"><strong><b>DOCUMENT</b></strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>            
+    </nav>
+</div>
+<!-- </subHeader> -->
+
+<!-- side nav filters -->
+<div id="wrapper" class="">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper" class="blue-grey lighten-5"> <!-- Filters-Menu -->
+            <div class="sidebar-brand justify-content-center" id="header_main_icon">
+                <a>Filters
+                <i id="main_icon" class="fa fa-close rotate-icon blue-text" aria-hidden="true"></i></a>
+            </div>
+            <ul class="sidebar-nav blue-text z-depth-2 blue-grey lighten-5" id="scroll-pane"> 
+            <!-- tap accordion -->
+            <!--Accordion wrapper-->
+                <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="card blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>PUMP TYPE
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="card-block">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="checkboxA1">
+                                    <label for="checkboxA1">
+                                        High-Pressure
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxA2">
+                                    <label for="checkboxA2">
+                                        Lightweight High-Pressure
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxA3">
+                                    <label for="checkboxA3">
+                                        Mid-Range
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxA4">
+                                    <label for="checkboxA4">
+                                        Multipurpose
+                                    </label><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingTwo">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>ENGINE TYPE
+                            </h5>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="card-block">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="checkboxB1">
+                                    <label for="checkboxB1">
+                                        Diesel
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxB2">
+                                    <label for="checkboxB2">
+                                        Gas 4-Stroke
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxB3">
+                                    <label for="checkboxB3">
+                                        Gas 2-Stroke
+                                    </label><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingThree">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>ENGINE POWER
+                            </h5>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse show" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="card-block">
+                                <div class="checkbox">
+                                    <input type="checkbox" value="" id="checkboxC1">
+                                    <label for="checkboxC1">
+                                        2.5 HP
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC2">
+                                    <label for="checkboxC2">
+                                        6 HP
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC3">
+                                    <label for="checkboxC3">
+                                        9 HP
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC4">
+                                    <label for="checkboxC4">
+                                        10 HP
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC5">
+                                    <label for="checkboxC5">
+                                        13 hp
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC6">
+                                    <label for="checkboxC6">
+                                        18 HP
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC7">
+                                    <label for="checkboxC7">
+                                        21 hp
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC8">
+                                    <label for="checkboxC8">
+                                        23 hp
+                                    </label><br/>
+                                    <input type="checkbox" value="" id="checkboxC9">
+                                    <label for="checkboxC9">
+                                        25 HP
+                                    </label><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress (2) -->
+                    <div class="card card-silver-light blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingFour">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>MAXIMUM FLOW <small>(US GPM)</small>
+                            </h5>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="card-block">
+                                <input id="nilai-min" size="1" class="blue-grey lighten-5" />
+                                <input id="nilai-max" size="1" class="blue-grey lighten-5" />
+                                <div class="bar" nilai="100">
+                                    <div class="slider-max"></div>
+                                    <div class="slider-min"></div>
+                                    <div class="range-max"></div>
+                                    <div class="range-min"></div>
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-silver-light blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingFive">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>MAXIMUM PRESSURE <small>(PSI)</small>
+                            </h5>
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="collapse show" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="card-block">
+                                <input id="nilai-min2" class="blue-grey lighten-5" />
+                                <input id="nilai-max2" class="blue-grey lighten-5" />
+                                <div class="bar" nilai="100">
+                                    <div class="slider-max2"></div>
+                                    <div class="slider-min2"></div>
+                                    <div class="range-max2"></div>
+                                    <div class="range-min2"></div>
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-silver-light blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingSix">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>MAXIMUM HEAD <small>(FOOT)</small>
+                            </h5>
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="collapse show" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="card-block">
+                                <input id="nilai-min3" class="blue-grey lighten-5" />
+                                <input id="nilai-max3" class="blue-grey lighten-5" />
+                                <div class="bar" nilai="100">
+                                    <div class="slider-max3"></div>
+                                    <div class="slider-min3"></div>
+                                    <div class="range-max3"></div>
+                                    <div class="range-min3"></div>
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-silver-light blue-grey lighten-5">
+                        <div class="card-header" role="tab" id="headingSeven">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <i class="fa fa-angle-down rotate-icon" style="float: left;"></i>DRY WEIGHT <small>(LBS)</small>
+                            </h5>
+                            </a>
+                        </div>
+                        <div id="collapseSeven" class="collapse show" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="card-block">
+                                <input id="nilai-min4" class="blue-grey lighten-5" />
+                                <input id="nilai-max4" class="blue-grey lighten-5" />
+                                <div class="bar" nilai="100">
+                                    <div class="slider-max4"></div>
+                                    <div class="slider-min4"></div>
+                                    <div class="range-max4"></div>
+                                    <div class="range-min4"></div>
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Accordion wrapper-->
+            </ul>
+        </div>
+        <!-- End Side Nav Filters -->
+
+        <!-- Start Page Content Wrapper -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <!-- Tab panels -->
+                <!-- Tab panels -->
+                <div class="tab-content">
+                    <!--Panel 1-->
+                    <div class="tab-pane fade in show active container" id="panel5" role="tabpanel">
+                        <br>
+                        <div class="container-fluid">
+                            <div class="row " id="pad-img-product">
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="view overlay hm-zoom hm-white-light shadowIn hoverable" style="padding: 30px;">
+                                        <a href="#">
+                                            <img src="../../img/icons/icon1.png" class="img-fluid mx-auto d-block wow bounceInDown" data-wow-delay="0.6s">
+                                            <div class="mask flex-center">
+                                                <p class="white-text"></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <hr class="hidden-md-up">
+
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="view overlay hm-zoom hm-white-light shadowIn hoverable" style="padding: 30px;">
+                                        <a href="#">
+                                            <img src="../../img/icons/icon1.png" class="img-fluid mx-auto d-block wow bounceInDown" data-wow-delay="1.2s">
+                                            <div class="mask flex-center">
+                                                <p class="white-text"></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <hr class="hidden-md-up">
+
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="view overlay hm-zoom hm-white-light shadowIn hoverable" style="padding: 30px;">
+                                        <a href="#">
+                                            <img src="../../img/icons/icon1.png" class="img-fluid mx-auto d-block wow bounceInDown" data-wow-delay="1.8s">
+                                            <div class="mask flex-center">
+                                                <p class="white-text"></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <hr class="hidden-md-up">
+
+                                <div class="col-lg-3 col-md-3 col-sm-6">
+                                    <div class="view overlay hm-zoom hm-white-light shadowIn hoverable" style="padding: 30px;">
+                                        <a href="#">
+                                            <img src="../../img/icons/icon1.png" class="img-fluid mx-auto d-block wow bounceInDown" data-wow-delay="2.4s">
+                                            <div class="mask flex-center">
+                                                <p class="white-text"></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><br/><br/>
+                            <div class="row">
+                                <div class="col text-center blue-text">
+                                    <div class="col-12">
+                                        <h5 class="wow fadeInUp"><strong><b>NEED FOR INFORMATION ?</b></strong>
+                                        </h5><br/>
+                                        <p class="wow fadeInUp">Our helpful and knowledgeable sales team can assist you in evaluating ypur needs,<br/>recommend products and provide quotes promptly.<br/>
+                                        WATERAX pries itself on offering you a customer service experience that will surpass ypur expectations</p>
+                                        <br/>
+                                        <button type="button" class="btn btn-outline-primary waves-effect" id="blue-find2" style="border: 3px solid #0e7bbf;"><a href="products/all_products.html" style="color: #0e7bbf;" class="wow fadeInUp"><strong><b>FIND THE RIGHT PRODUCT</b></strong></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- Akhir Wrapper -->
+                    </div>
+                    <!--/.Panel 1-->
+                    <!--Panel 2-->
+                    <div class="tab-pane fade" id="panel6" role="tabpanel">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                    </div>
+                    <!--/.Panel 2-->
+                    <!--Panel 3-->
+                    <div class="tab-pane fade" id="panel7" role="tabpanel">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
+                    </div>
+                    <!--/.Panel 3-->
+                </div>
+            </div>
+        </div>
+</div>
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only" id="dompag3">
+
+    <!--Footer Links-->
+    <div class="container">
+        <div class="row justify-content-md-center" id="content-footer">
+
+            <!--First column-->
+            <div class="col-lg-2 col-md-2 col-sm-6 col-mr-auto">
+                <h5 class="title h5-responsive headpoint"><strong>INDUSTRIES</strong></h5><br/>
+                <ul class="subpoint">
+                    <li><a href="#!">Fire Proection</a></li>
+                    <li><a href="#!">Fire Apparatus</a></li>
+                    <li><a href="#!">Industrial</a></li>
+                </ul>
+            </div>
+            <!--/.First column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Second column-->
+            <div class="col-lg-2 col-md-2 col-sm-6 col-mr-auto">
+                <h5 class="title h5-responsive headpoint"><strong>PRODUCT</strong></h5><br/>
+                <ul class="subpoint">
+                    <li><a href="#!">Fire Pumps</a></li>
+                    <li><a href="#!">Skid Units</a></li>
+                    <li><a href="#!">Components</a></li>
+                    <li><a href="#!">Fire Hose</a></li>
+                    <li><a href="#!">Water Handling</a></li>
+                    <li><a href="#!">Accessories</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Third column-->
+            <div class="col-lg-2 col-md-2 col-sm-6 col-mr-auto">
+                <h5 class="title h5-responsive headpoint"><strong>SUPPORT</strong></h5><br/>
+                <ul class="subpoint">
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Videos</a></li>
+                    <li><a href="#!">Documents</a></li>
+                    <li><a href="#!">Parts & Service</a></li>
+                    <li><a href="#!">Warranty</a></li>
+                    <li><a href="#!">Product Guide</a></li>
+                </ul>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Fourth column-->
+            <div class="col-lg-2 col-md-2 col-sm-6 col-mr-auto">
+                <h5 class="title h5-responsive headpoint"><strong>ABOUT</strong></h5><br/>
+                <ul class="subpoint">
+                    <li><a href="#!">History</a></li>
+                    <li><a href="#!">Profile</a></li>
+                    <li><a href="#!">Galery</a></li>
+                    <li><a href="#!">Careers</a></li>
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Fifth column-->
+            <div class="col-lg-2 col-md-2 col-sm-6 col-mr-auto">
+                <h5 class="title h5-responsive headpoint"><strong>CONTACT</strong></h5><br/>
+                <ul class="subpoint">
+                    <li><a href="#!">Contact Us</a></li>
+                    <li><a href="#!">Find a dealer</a></li>
+                    <li><a href="#!">Become a partner</a></li>
+                    <li><a href="#!">Link 4</a></li>
+                </ul>
+            </div>
+            <!--/.Fifth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright" style="background-color:#fff;">
+        <dl class="d-flex flex row" id="minCopy">
+            <dt class="col-xl-9 col-lg-8 col-md-7 col-sm-6" style="text-align:left; padding-left: 35px; top:15px;"><h6 class="h6-responsive blue-text"><b>© 2017 Copyright:<a href="#" style="color: #0e7bbf;">WILFINA MULIA TAMA - All rights reserved</a></b></h6></dt>
+
+            <dd class="container-fluid col-xl-3 col-lg-4 col-md-5 col-sm-6" style="text-align:left; padding-left: 35px;">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><h6 class="h6-responsive"><b><a href="#" style="color: #0e7bbf;">PRIVACY POLICE</a></b></h6></li>
+                    <li class="list-inline-item blue-text"><h6 class="h6-responsive"><b><a href="#" style="color: #0e7bbf;">TERMS OF USE</a></b></h6></li>
+                </ul>
+            </dd>
+        </dl>
+    </div>
+    <!--/.Copyright-->
+
+    <div id="pag3">
+        <li id="left3"><a></a></li>
+        <li id="right3"><a></a></li>
+    </div>
+
+</footer>
+<!--/.Footer-->
+
+</script>
+<!-- JQuery -->
+<script type="text/javascript" src="../../js/jquery-3.1.1.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../../js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../../js/mdb.min.js"></script>
+
+<!-- filters slider -->
+<script type="text/javascript" src="../../js/filters-slider.js"></script>
+    
+<script type="text/javascript">
+        // SideNav init
+        $(".button-collapse").sideNav();
+        var el = document.querySelector('.custom-scrollbar');
+        Ps.initialize(el);
+</script>
+
+<script type="text/javascript">
+        new WOW().init();
+</script>
+
+<script type="text/javascript">
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+
+    $("#header_main_icon").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+
+</script>
+
+<script type="text/javascript">
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function ({
+      e.target // newly activated tab
+      e.relatedTarget // previous active tab
+})
+</script>
+</body>
+
+</html>
+

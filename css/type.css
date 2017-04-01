@@ -1,0 +1,271 @@
+#wrapper {
+    padding-left: 0;
+    transition: all .4s ease 0s;
+    height: auto;
+    width: 100%;
+}
+
+#sidebar-wrapper {
+    margin-left: -150px; /*Hidden-Side-Nav-Flters*/
+    left: -60px;
+    width: 200px;
+    position:absolute;
+    height: 100%;
+    top: 168px;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+/*Scrool Bar*/
+#scroll-pane{
+  overflow-x: auto;
+  height: 100%;
+}
+/* dengan background transparent agar scroll bar tidak terlihat */
+#scroll-pane::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+#scroll-pane::-webkit-scrollbar-track {
+  background-color:transparent;
+  border-radius: 2px;
+}
+#scroll-pane::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: transparent;
+  transition: all 400ms ease-in-out;
+}
+
+/* div di-hover dan scroll bar diberi background solid agar terlihat */
+#scroll-pane:hover::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 2px;
+}
+#scroll-pane:hover::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, .4);
+  transition: all 400ms ease-in-out;
+}
+#scroll-pane:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #0e7bbf;
+}
+
+/*Accordion*/
+/*.card-silver-light{
+  background-color: #eee;
+}*/
+
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 160px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+}
+
+
+#sidebar_menu li a, .sidebar-nav li a {
+    color: purple;
+    display: block;
+    float: left;
+    text-decoration: none;
+    width: 150px;
+    background: #ddd;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    -ms-transition: background .5s;
+    transition: background .5s;
+}
+
+.sidebar-nav ul{
+  display: block;
+  text-decoration: none;
+  width: auto;
+  padding-left: 5px;
+}
+
+#sidebar_menu li a{
+  display: block;
+  text-decoration: none;
+  width: 200px;
+  padding-left: 25px;
+}
+
+.sidebar-nav {
+  height: 35px;
+  line-height: auto;
+  /*margin-left: 20px;*/
+}
+
+.sidebar-brand{
+  width: 100%;
+  background-color: pink;
+  height: 40px;
+  line-height: auto;
+  font-size: 18px;
+}
+
+#main_icon{
+   float:right;
+   /*padding-top:16px;*/
+   background-color: #aaa;
+   width: 52px;
+   height: 40px;
+   line-height: 40px;
+   padding-left: 20px;
+}
+
+#main_icon a{
+   float:right;
+   /*padding-right: 65px;*/
+   display: inline-block;
+   text-align: right;
+   /*right: -20px;*/
+}
+
+#header_main_icon{
+  cursor: pointer;
+}
+
+#header_main_icon a{
+  line-height: 40px;
+  margin-left: 20px;
+}
+
+.sub_icon
+{
+   float:right;
+   padding-right: 65px;
+   padding-top:10px;
+}
+
+/*.content-header {
+  height: 65px;
+  line-height: 65px;
+}*/
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  line-height: 65px;
+  display: inline-block;
+}
+
+
+
+/*media screen*/
+@media(max-width: 992px){
+  #sidebar-wrapper {
+    margin-left: -150px; /*Hidden-Side-Nav-Flters*/
+    left: -60px;
+    width: 200px;
+    position:absolute;
+    height: 100%;
+    top: 74px;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+  }
+
+  #menu-toggle{
+  background-color: transparent;
+  }
+
+}
+
+@media (max-width:768px){
+  /*html, body{
+    background-color: brown;
+  }*/
+
+  #wrapper {
+    /*padding-left: 10px;*/
+    transition: all .4s ease 0s;
+  }
+
+  #page-content-wrapper{
+    padding-left: 0px;
+  }
+
+  #sidebar-wrapper {
+    margin-left: -150px; /*Hidden-Side-Nav-Flters*/
+    left: -60px;
+    width: 100px;
+    background: transparent;
+    position:absolute;
+    height: 100%;
+    top: 157px;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+    font-size: 12px;
+  }
+
+  .sidebar-nav li a{
+    font-size: 14px;
+  }
+
+  #wrapper.active {
+    padding-left: 160px;
+  }
+  #wrapper.active #sidebar-wrapper {
+    left: 150px;
+    width: 150px;
+    transition: all .4s ease 0s;
+  }
+
+  #menu-toggle{
+  background-color: transparent !important;
+  box-shadow: none !important;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #sidebar-wrapper {
+    margin-left: -150px; /*Hidden-Side-Nav-Flters*/
+    left: -60px;
+    width: 200px;
+    position:absolute;
+    height: 100%;
+    top: 157px;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+  }
+
+  #sub-menu2{
+    right: 0;
+    margin-left: -60px;
+  }
+
+  .sidebar-nav > .sidebar-brand a {
+    background-color: yellow;
+    left: 90px;
+  }
+
+}
+/*End Screen Customize*/
+
+
+
+/*Accordion-Tab*/
+.accordion{
+  background-color: #ddd !important;
+}
+
+#menu-toggle{
+  background-color: transparent;
+  /*box-shadow: 2px 1px #aaa;     */
+}

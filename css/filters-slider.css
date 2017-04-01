@@ -1,0 +1,61 @@
+.bar{
+	position: relative;
+	margin-bottom: 20px;
+	height: 8px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: white;
+	padding-right: 6px;
+}
+
+.slider-min, .slider-min2, .slider-min3, .slider-min4{
+	height: 20px;
+	width: 8px;
+	background-color:#8bc;
+	border-radius: 3px;
+	position: absolute;
+	top: -6px;
+	text-align: left;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.slider-max, .slider-max2, .slider-max3, .slider-max4{
+	height: 20px;
+	width: 8px;
+	background-color:#abf;
+	border-radius: 3px;
+	position: absolute;
+	top: -6px;
+	/*float:right;*/
+	/*padding-right: 10px;*/
+	z-index: 2;
+	cursor: pointer;
+}
+
+.range-min, .range-min2, .range-min3, .range-min4{
+	background-color: white;
+	position: absolute;
+	left: 0;
+	height: 100%;
+}
+
+.range-max, .range-max2, .range-max3, .range-max4{
+	background-color: #0e7bbf;
+	position: absolute;
+	left: 0;
+	height: 100%;
+}
+
+#nilai-min, #nilai-min2, #nilai-min3, #nilai-min4{
+	width: 50%;
+	border: none;
+}
+
+#nilai-max, #nilai-max2, #nilai-max3, #nilai-max4{
+	width: 40%;
+	float: right;
+	padding-left: 25px;
+	border: none;
+}
