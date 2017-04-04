@@ -113,7 +113,8 @@
 
 .sidebar-brand{
   width: 100%;
-  background-color: pink;
+  background-color: #eef;
+  /*border-left: 1px solid #ccc;*/
   height: 40px;
   line-height: auto;
   font-size: 18px;
@@ -122,7 +123,7 @@
 #main_icon{
    float:right;
    /*padding-top:16px;*/
-   background-color: #aaa;
+   /*background-color: #aaa;*/
    width: 52px;
    height: 40px;
    line-height: 40px;
