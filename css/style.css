@@ -1,5 +1,6 @@
 html, body {
    height: 100%;
+   width: 100%;
 }
 
 .waves-effect{
@@ -26,10 +27,8 @@ html, body {
 
 /* Navigation*/
 .navbar {
-  background-color: white;
+  /*background-color: blue;*/
   box-shadow:none !important;
-  border-bottom-style: none !important;
-  /*border-bottom: 2px solid #0e7bbf !important;*/
   border-bottom-style: none !important;
 }
         
@@ -46,7 +45,8 @@ html, body {
 
 nav{
   line-height: 72px;
-  background-color: #fff;
+  /*background-color: #fff;*/
+  /*background-color: black;*/
 }
 
 
@@ -67,6 +67,7 @@ nav{
   font-size: 17px;
   line-height: 30px;
   height: 52px;
+  /*background-color: black;*/
 }
 
 .navbar-toggler{
